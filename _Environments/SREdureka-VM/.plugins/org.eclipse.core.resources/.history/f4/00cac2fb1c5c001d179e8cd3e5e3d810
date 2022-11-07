@@ -1,9 +1,0 @@
-
-public class Programmer {
-
-	name;
-	primaryProgrammingLanguage;
-	certifications[];
-	
-	
-}

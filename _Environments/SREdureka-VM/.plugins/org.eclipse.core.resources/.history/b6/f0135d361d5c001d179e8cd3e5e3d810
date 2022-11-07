@@ -1,9 +1,0 @@
-
-public class Programmer {
-
-	String name;
-	String primaryProgrammingLanguage;
-	String certifications[];
-	
-	
-}

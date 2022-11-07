@@ -1,9 +1,0 @@
-import ActionPrintDocumentDemo.File;
-
-public class Printer {
-
-	void printDocument(File fileObject){
-		
-	}
-
-}
