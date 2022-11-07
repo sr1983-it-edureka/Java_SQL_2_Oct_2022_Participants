@@ -1,0 +1,16 @@
+
+public class SystemProgrammerDemo {
+
+	public static void main(String[] args) {
+		
+		// Networking, DeviceDrivers, MemoryManagement
+		// Internet Drivers
+		SystemProgrammer vivek = new SystemProgrammer
+			("Vivek", "C", true, false, true, false);
+		
+		SystemProgrammer harini = new SystemProgrammer
+			("Harini", "C++", false, true, true, true);
+				
+		
+	}
+}

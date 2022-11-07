@@ -1,0 +1,28 @@
+
+public class ActionDownloadSoftwareDemo {
+
+	public static void main(String[] args) {
+				
+		// Action
+			// Downloading a software
+			// Download Telegram app on the john-mobile, where the version 12.1
+		
+		
+		//Objects
+		/*
+		 * printer-01
+		 * java-pdf
+		 */
+	
+	//Action name
+//		printDocument
+	
+	// Primary Object
+		//printer-01
+	
+	// Dependent Elements
+	// What all elements have to be present for the action to be performed
+	// java-pdf
+		
+	}
+}

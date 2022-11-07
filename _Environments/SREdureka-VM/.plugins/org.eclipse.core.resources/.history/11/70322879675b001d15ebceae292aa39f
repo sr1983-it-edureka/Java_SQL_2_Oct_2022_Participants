@@ -1,0 +1,11 @@
+
+public class IntegerCategoryDataTypesDemo {
+
+	public static void main(String[] args) {
+		
+		// Integer category
+		// byte, short, int, long
+		
+		
+	}
+}

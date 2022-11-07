@@ -1,0 +1,12 @@
+
+public class Printer {
+
+	String model;
+	String color;
+	float price;
+
+	void printDocument(File fileObject){
+		
+	}
+
+}

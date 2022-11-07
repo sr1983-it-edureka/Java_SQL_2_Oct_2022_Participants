@@ -1,0 +1,18 @@
+
+public class OperationsDemo {
+
+	public static void main(String[] args) {
+		
+		// int c = a + b;
+			
+		// IO
+		// print("Hello")
+		
+		//IO
+		// get_input_from_user
+		
+		// calling_function
+		
+		
+	}
+}

@@ -1,0 +1,15 @@
+
+public class FilePropertiesDemo {
+
+	public static void main(String[] args) {
+		
+		File javaFile = new File();
+		javaFile.name = "Java in 30 days";
+		javaFile.noOfPages = 100;
+		
+		File harryPotterPDFFile = new File();
+		harryPotterPDFFile.name = "Harry Potter - Part 5";
+		harryPotterPDFFile.noOfPages = 751;
+		
+	}
+}

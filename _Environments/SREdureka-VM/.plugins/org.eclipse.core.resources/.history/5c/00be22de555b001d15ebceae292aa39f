@@ -1,0 +1,22 @@
+
+public class ActionPrintDocumentDemo {
+
+	public static void main(String[] args) {
+	
+		// Action
+		// Printer-01 printing the document java-pdf
+		
+		//Objects
+			/*
+			 * printer-01
+			 * java-pdf
+			 */
+		
+		//Action name
+//			printDocument
+		
+		// Primary Object
+		
+	}
+	
+}

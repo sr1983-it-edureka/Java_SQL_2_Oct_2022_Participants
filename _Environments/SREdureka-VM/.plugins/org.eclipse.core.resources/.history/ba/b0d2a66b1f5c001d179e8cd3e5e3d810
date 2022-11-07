@@ -1,0 +1,26 @@
+
+public class Programmer {
+
+	String name;
+	String primaryProgrammingLanguage;
+	String certifications[];
+	
+	Programmer(String lName, String lPrimaryProgrammingLanguage,
+		String[] lCertifications) {
+		
+		name = lName;
+		primaryProgrammingLanguage = lPrimaryProgrammingLanguage;
+		certifications = lCertifications;
+	}
+	
+	void display() {
+		
+		StringBuilder contents = new StringBuilder();
+		
+		contents.append("Name is ").append(name);
+		contents.append("Primary Programming Language ->")
+			.append(primaryProgrammingLanguage);
+		
+		
+	}
+}

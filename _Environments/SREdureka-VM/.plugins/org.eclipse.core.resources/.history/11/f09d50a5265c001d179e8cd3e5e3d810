@@ -1,0 +1,10 @@
+
+public class SystemProgrammerDemo {
+
+	public static void main(String[] args) {
+		
+		SystemProgrammer vivek = new SystemProgrammer
+			("Vivek", "C", true, true, true)
+		
+	}
+}

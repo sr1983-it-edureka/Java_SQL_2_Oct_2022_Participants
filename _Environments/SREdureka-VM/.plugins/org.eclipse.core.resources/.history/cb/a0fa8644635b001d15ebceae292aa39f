@@ -1,0 +1,8 @@
+
+public class Printer {
+
+	void printDocument(File fileObject){
+		
+	}
+
+}

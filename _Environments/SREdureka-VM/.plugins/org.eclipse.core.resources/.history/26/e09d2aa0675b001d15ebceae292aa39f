@@ -1,0 +1,9 @@
+
+public class ByteDataTypeDemo {
+
+	public static void main(String[] args) {
+		
+		byte countOfFamilyMembers = 10;
+		
+	}
+}

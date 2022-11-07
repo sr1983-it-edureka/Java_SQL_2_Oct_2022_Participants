@@ -1,0 +1,21 @@
+
+public class ActionFilePrintItselfDemo {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * Action
+		 * 		// harry-potter file (pdf) wants to print itself by sending the 
+		// contents to the printer printer-05
+
+
+			Primary objects
+				
+
+		 */
+		
+		
+		harrry_potter_file.print(printer_01);
+		
+	}
+}

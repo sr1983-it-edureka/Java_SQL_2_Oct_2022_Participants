@@ -1,0 +1,12 @@
+
+public class Programmer {
+
+	String name;
+	String primaryProgrammingLanguage;
+	String certifications[];
+	
+	Programmer(String name, String primaryProgrammingLanguage,
+		String[] certifications) {
+		
+	}
+}

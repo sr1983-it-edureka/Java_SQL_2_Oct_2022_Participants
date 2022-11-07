@@ -1,0 +1,14 @@
+
+public class SystemProgrammer {
+
+	// Networking, DeviceDrivers, MemoryManagement
+	// Internet Drivers
+
+	String name;
+	String preferredProgrammmingLanguage;	
+
+	networkingSkills;
+	deviceDriversSkills;
+	memoryManagementSkills
+	internetDriversSkills;
+}

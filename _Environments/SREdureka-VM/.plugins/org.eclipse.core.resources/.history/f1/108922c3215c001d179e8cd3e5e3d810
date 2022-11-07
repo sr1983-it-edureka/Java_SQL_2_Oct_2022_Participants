@@ -1,0 +1,15 @@
+
+public class ProgrammerDemo {
+
+	public static void main(String[] args) {
+			
+		Programmer raghu = new Programmer("Raghu", "Java", 
+			new String[] {"Java 11 Certififcation", "PHP Certification"});		
+		raghu.display();
+		
+		Programmer sweta = new Programmer("Sweta", "Node JS",
+			new String[] {"Node JS Certification", "Java FSD Cerfification"});
+		sweta.display();
+		
+	}
+}

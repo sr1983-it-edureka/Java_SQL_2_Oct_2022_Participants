@@ -1,0 +1,31 @@
+
+public class ActionPrintDocumentDemo {
+
+	public static void main(String[] args) {
+	
+		// Action
+		// Printer-01 printing the document java-pdf
+		
+		//Objects
+			/*
+			 * printer-01
+			 * java-pdf
+			 */
+		
+		//Action name
+//			printDocument
+		
+		// Primary Object
+			//printer-01
+		
+		// Dependent Elements
+		// What all elements have to be present for the action to be performed
+		// java-pdf
+		
+		printer_01.printDocument(java_pdf);
+		
+		printer_03.printDocument(harry_potter_book_pdf);
+		
+	}
+	
+}

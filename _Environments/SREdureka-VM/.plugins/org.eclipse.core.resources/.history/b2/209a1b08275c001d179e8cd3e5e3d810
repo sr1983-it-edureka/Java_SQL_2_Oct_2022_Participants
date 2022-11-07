@@ -1,0 +1,14 @@
+
+public class SystemProgrammer {
+
+	name;
+	preferredProgrammmingLanguage;
+	
+	// Networking, DeviceDrivers, MemoryManagement
+	// Internet Drivers
+
+	networkingSkills;
+	deviceDriversSkills;
+	memoryManagementSkills
+	internetDriversSkills;
+}
