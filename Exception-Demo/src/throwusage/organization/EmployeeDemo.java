@@ -5,8 +5,10 @@ public class EmployeeDemo {
 	public static void main(String[] args) throws Exception {
 
 		// ABCD-Organization
+		// Rule 1
 		// To be promoted to team-manager, the current designation must be
 		// Team- Lead
+		// Rule 2 - Employee should have atleast completed 3 projects
 
 		try {
 			Employee vivek = new Employee("Vivek", Designation.JUNIOR_PROGRAMMER);
