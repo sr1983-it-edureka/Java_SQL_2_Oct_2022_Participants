@@ -16,6 +16,21 @@ public class TODOProject {
 		// Eclipse - Project Dependencies - Not working
 		// Map traversal through Map.Entry
 		// TODO - To go through chats
+		// @Override discuss
+		// Break / Continue statement
+		// Multi Dimension Array
+		// Plymorphism (Static & Dynamic)
+		// StringBuffer (Thread)
+		// Abstract usage
+		// Final
+		// Sort -> Custom Objects [Sorting Algorthm]
+		// Checked and Uncheck Exception
+		// Multiple catch and Nested try-catch
+		// Thread
+		// Collection - TreeSet, TreeMap, Vector, Hashtable, Properties
+		// Enumeration, ListIterator
+		// Queue / P Queue
+		// Inner classes
 		
 		// DONE
 		
@@ -24,6 +39,8 @@ public class TODOProject {
 		// Usage of "toString()"
 		// String.format
 
+		// OPTIONAL
+			// File - copy
 		
 	}
 }

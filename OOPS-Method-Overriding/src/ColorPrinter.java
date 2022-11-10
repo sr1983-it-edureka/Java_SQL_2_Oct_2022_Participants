@@ -1,7 +1,10 @@
+import printer.Printer;
 
 public class ColorPrinter extends Printer{
 
-	void print() {
+	public void print() {
+		
+		System.out.println(a);
 		System.out.println("Printing some colored documents "
 				+ "- with all the 7 possible colors...");
 	}

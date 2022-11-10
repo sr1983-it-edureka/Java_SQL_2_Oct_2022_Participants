@@ -24,6 +24,9 @@ public class Manager {
 		Advertisement advertisment = new Advertisement();
 		advertisment.displayProducts(products);
 		
+//		advertisment.myDefaultMethod();
+//		advertisment.myPrivateMethod();
+		
 		System.out.println(advertisment.COMPANY_NAME);
 //		System.out.println(advertisment.noOfSuccessfulAds);
 		
