@@ -9,10 +9,13 @@ class CollectionSamples {
 		listOfColors.add("Blue");
 		listOfColors.add("Pink");
 		listOfColors.add("Orange");
+//		listOfColors.add(10);
 		
 		return listOfColors;
 	}
 	
+	// 
+
 	static ArrayList<Integer> randomNumbers(){
 		
 		ArrayList<Integer> randomNumbers = new ArrayList<>();

@@ -10,7 +10,7 @@ public class ListIterationDemo {
 		// colors ---> indirectly comes from Iterable
 		// so iterating over the elements via enhanced-for-loop
 		// is possible
-		// Enhanced For Loop
+		// Enhanced For Loop / For Each Loop
 		for (String color : colors) {
 			
 			System.out.println("Color is " + color);
