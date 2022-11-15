@@ -1,0 +1,25 @@
+
+<employees>
+
+	<employee id="101" email="hugh.grant@gmail.com">
+		<firstName>Hugh</firstName>
+		<lastName>Grant</lastName>
+		<age>40</age>
+		<location>England</location>
+	</employee>
+
+	<employee id="102" email="mark.waugh@gmail.com">
+		<firstName>Mark</firstName>
+		<lastName>Waugh</lastName>
+		<age>45</age>
+		<location>Australia</location>
+	</employee>
+
+	<employee id="103" email="dan@gmail.com">
+		<firstName>Dan</firstName>
+		<lastName>Morgan</lastName>
+		<age>35</age>
+		<location>US</location>
+	</employee>
+	
+</employees>

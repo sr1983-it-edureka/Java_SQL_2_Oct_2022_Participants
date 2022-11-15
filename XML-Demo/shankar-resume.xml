@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resume>
+
+	<project id="123" teamSize="5">
+		<name>Mobile Project</name>
+		<duration>12 months</duration>
+		<client>ABC</client>
+		<link>github.com/mobile-abc</link>
+	</project>
+
+	<project id="456" teamSize="10">
+		<name>Web Project</name>
+		<duration>15 months</duration>
+		<client>XYZ</client>
+		<link>github.com/web-xyz</link>
+	</project>
+
+	<project id="789" teamSize="15">
+		<name>Console based Project</name>
+		<duration>6 months</duration>
+		<client>PQR</client>
+		<link>github.com/console-xyz</link>
+	</project>
+
+</resume>
