@@ -6,8 +6,9 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Scanner;
 
-public class BulkInsertRecordsDemo {
+public class BatchInsertRecordsDemo {
 
 	public static void main(String[] args) {
 		
@@ -34,6 +35,7 @@ public class BulkInsertRecordsDemo {
 		try {
 			 
 			connection = DriverManager.getConnection(connectionUrl);
+			connection.setAutoCommit(false);
 			
 			System.out.println("Connection established ....");
 			
@@ -52,13 +54,32 @@ public class BulkInsertRecordsDemo {
 						+ "('%s', '%s', %d)", 
 							employee.name, employee.address, employee.id);
 				
-				int noOfRowsAffected = statement.executeUpdate(insertQuery);
-				
-				// INSERT -> 100 [s
-				// COMMIT -> 100 [
+				statement.addBatch(insertQuery);
+			}		
 			
-				System.out.println("No of Rows affected " + noOfRowsAffected);					
-			}			
+			// Step 1
+			int[] rows = statement.executeBatch();
+			for (int rowsAffected : rows) {
+				System.out.println("No of Rows affected " + rowsAffected);					
+			}
+			
+
+			// Step 2
+			Scanner scanner = new Scanner(System.in);
+			
+			System.out.println("Do you want to commit (Y / N)?");
+			
+			if (scanner.hasNextLine()) {
+				
+				String userResponse = scanner.nextLine();
+				
+				if (userResponse.equals("Y")) {
+					connection.commit();
+				}else {
+					connection.rollback();
+				}
+			}
+			
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -84,7 +105,7 @@ public class BulkInsertRecordsDemo {
 		for (int index = 1; index <=10; index ++) {
 			
 			Employee employee = new Employee();
-			employee.id = 200 + index;
+			employee.id = 600 + index;
 			employee.name = "EName - " + employee.id;
 			employee.address = "EAddress - " + employee.id;
 					

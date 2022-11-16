@@ -6,6 +6,7 @@
 		<lastName>Grant</lastName>
 		<age>40</age>
 		<location>England</location>
+		<salary>125000</salary>
 	</employee>
 
 	<employee id="102" email="mark.waugh@gmail.com">
@@ -13,6 +14,7 @@
 		<lastName>Waugh</lastName>
 		<age>45</age>
 		<location>Australia</location>
+		<salary>135000</salary>
 	</employee>
 
 	<employee id="103" email="dan@gmail.com">
@@ -20,6 +22,15 @@
 		<lastName>Morgan</lastName>
 		<age>35</age>
 		<location>US</location>
+		<salary>145000</salary>
 	</employee>
-	
+
+	<employee id="104" email="kohli@gmail.com">
+		<firstName>Virat</firstName>
+		<lastName>Kohli</lastName>
+		<age>35</age>
+		<location>IN</location>
+		<salary>165000</salary>
+	</employee>
+
 </employees>
