@@ -4,7 +4,7 @@ public class TODOProject {
 	public static void main(String[] args) {
 		
 		// NOT DONE
-
+		// Maven - default is 1.7 -> change it
 		// Usage of "static" method
 		// protected usage
 		// Usage of Object class and its relation to toString()
