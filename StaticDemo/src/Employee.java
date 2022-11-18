@@ -25,6 +25,15 @@ public class Employee {
 		totalEmployeeCount2 = totalEmployeeCount2 + 1;
 	}
 	
+	
+	void incrementSalary() {
+		
+		System.out.println("hello");
+		
+		int a = 10;
+		int b = 20;
+	}
+	
 	// Non static method / Regular method
 	void display() {
 		
@@ -32,7 +41,7 @@ public class Employee {
 			String.format("Name is %s and Id is %s", name, id));
 	}
 	
-	static ArrayList<Employee> createEmployees() {
+	 static ArrayList<Employee> createEmployees() {
 		
 		// static method can access only static variables
 		Employee e1 = new Employee("E1", "1");

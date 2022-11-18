@@ -20,7 +20,9 @@ public class EmployeeDemo {
 
 		Employee jagan = new Employee("Jagan", "102");
 		jagan.display();
-		jagan.createEmployees();
+		jagan.incrementSalary();
+		
+		Employee.createEmployees();
 
 		System.out.println("Ttoal Employee Count " 
 				+ Employee.totalEmployeeCount);

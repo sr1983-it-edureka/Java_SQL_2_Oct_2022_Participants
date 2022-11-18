@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+"http://jakarta.apache.org/struts/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+
+	<!-- Model obbjects -->
+	
+	<form-beans>
+		<form-bean name="loginForm" type="com.edureka.javasql2.struts.LoginModel"></form-bean>
+	</form-beans>
+
+	<!--  Actions -->	
+	
+	<action-mappings>
+		<action path="/login" name="loginForm" type = "com.edureka.javasql2.struts.LoginAction"
+		input="/login.jsp">
+			
+			<!--  Outcomes -->
+			
+			<forward name="loginSuccessOutcome" path="/success.jsp" >
+			</forward>
+			
+			<forward name="loginFailureOutcome" path="/failure.jsp">
+			</forward>
+
+		</action>
+	</action-mappings>
+
+</struts-config>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+"http://jakarta.apache.org/struts/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+
+<!--  Model objects -->
+	
+	<form-beans>
+		<form-bean name = "welcomeModel" type="com.edureka.javasql2.struts.WelcomeModel" />
+	</form-beans>
+
+<!-- Action objects -->
+
+
+	<action-mappings>
+		<action path="/welcome" name="welcomeModel" 
+		type="com.edureka.javasql2.struts.WelcomeAction">
+			
+			<forward name="welcomePageOutcome" path="/welcome.jsp" />
+			
+		</action>
+	</action-mappings>
+	
+
+</struts-config>
+
