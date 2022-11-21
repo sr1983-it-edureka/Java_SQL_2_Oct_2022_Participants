@@ -1,0 +1,15 @@
+
+
+
+ProductsLister productsLister;
+
+productsLister.listProducts("category=mobile");
+
+Service
+	name, 
+	inputs
+		xml
+	outputs
+		xml
+	url
+		

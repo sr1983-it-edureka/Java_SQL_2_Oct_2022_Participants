@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 
 public class MapDemo {
 
@@ -23,7 +24,9 @@ public class MapDemo {
 //		basicOperations(processes);
 //		printKeys(processes);
 //		printValues(processes);
-		printKeyAndValues(processes);
+		
+//		printKeyAndValuesv1(processes);
+		printKeyAndValuesv2(processes);
 	}
 	
 	static void basicOperations(HashMap<Integer, String> processes) {
@@ -60,17 +63,38 @@ public class MapDemo {
 		}
 	}
 	
-	static void printKeyAndValues(HashMap<Integer, String> processes) {
+	static void printKeyAndValuesv1(HashMap<Integer, String> processes) {
 		
 		Iterator<Integer> iterator = processes.keySet().iterator();
 		
 		while (iterator.hasNext()) {
 			
-			int key = iterator.next();			
-			String value = processes.get(key);
+			int processId = iterator.next();			
+			String processName = processes.get(processId);
 			
 			System.out.println(String.format(
-				"Key is %d and Value is %s", key, value));
+				"Key is %d and Value is %s", processId, processName));
 		}
 	}
+
+
+	static void printKeyAndValuesv2(HashMap<Integer, String> processes) {
+		
+		Iterator<Map.Entry<Integer, String>> iterator 
+			= processes.entrySet().iterator();
+		
+		while (iterator.hasNext()) {
+			
+			Map.Entry<Integer, String> entry
+				= iterator.next();
+			
+			int processId = entry.getKey();
+			String processName = entry.getValue();
+			
+			
+			System.out.println(String.format(
+				"Key is %d and Value is %s", processId, processName));
+		}
+	}
+
 }

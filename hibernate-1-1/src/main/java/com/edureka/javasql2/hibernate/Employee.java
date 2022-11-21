@@ -95,9 +95,10 @@ public class Employee {
 		this.address = address;
 	}
 
-	public void display() {
+	public String toString() {
 		
-		System.out.println(
-			String.format("Id %d, First name %s, last Name %s, Age %d, Email %s", id, firstName, lastName, age, emailId));
+		return 
+			String.format("Id %d, First name %s, last Name %s, Age %d, "
+					+ "Email %s", id, firstName, lastName, age, emailId);
 	}
 }

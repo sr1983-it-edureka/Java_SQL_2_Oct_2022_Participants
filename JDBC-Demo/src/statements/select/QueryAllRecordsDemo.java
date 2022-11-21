@@ -46,7 +46,7 @@ public class QueryAllRecordsDemo {
 				int id = resultSet.getInt(1);				
 				String name  = resultSet.getString(2);				
 				String address = resultSet.getString(3);
-			
+							
 				System.out.println(String.format(
 					"Id is %d, name is %s, address is %s", 
 					id, name, address));

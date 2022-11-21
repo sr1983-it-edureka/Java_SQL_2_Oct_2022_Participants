@@ -13,8 +13,8 @@ public class Address {
 
 	@Id
 	@Column(name = "id")
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long addressId;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 	
 	@Column(name = "address_info")
 	private String addressInformation;
@@ -47,12 +47,12 @@ public class Address {
 		this.pincode = pincode;
 	}
 	
-	public Long getAddressId() {
-		return addressId;
+	public Long getId() {
+		return id;
 	}
 
-	public void setAddressId(Long addressId) {
-		this.addressId = addressId;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getAddressInformation() {
@@ -95,5 +95,11 @@ public class Address {
 		this.pincode = pincode;
 	}
 	
+	public String toString() {
+			
+		return String.format("Id %d, Address Information %s, "
+				+ ",City %s, State %s, Country %s, Pincode %d ", 
+				id, addressInformation, city, state, country, pincode);
+	}
 	
 }

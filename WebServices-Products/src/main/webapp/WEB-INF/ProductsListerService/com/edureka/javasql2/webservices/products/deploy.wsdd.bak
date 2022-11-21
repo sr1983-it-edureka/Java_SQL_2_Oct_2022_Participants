@@ -1,0 +1,29 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from ProductsListerService WSDL service -->
+
+  <service name="ProductsLister" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://products.webservices.javasql2.edureka.com"/>
+      <parameter name="wsdlServiceElement" value="ProductsListerService"/>
+      <parameter name="schemaQualified" value="http://products.webservices.javasql2.edureka.com"/>
+      <parameter name="wsdlServicePort" value="ProductsLister"/>
+      <parameter name="className" value="com.edureka.javasql2.webservices.products.ProductsListerSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="ProductsLister"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="listProducts" qname="operNS:listProducts" xmlns:operNS="http://products.webservices.javasql2.edureka.com" returnQName="retNS:listProductsReturn" xmlns:retNS="http://products.webservices.javasql2.edureka.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:category" xmlns:pns="http://products.webservices.javasql2.edureka.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <parameter name="allowedMethods" value="listProducts"/>
+
+  </service>
+</deployment>
