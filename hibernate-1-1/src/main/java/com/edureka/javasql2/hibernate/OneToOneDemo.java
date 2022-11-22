@@ -11,10 +11,10 @@ public class OneToOneDemo {
 
 	public static void main(String[] args) {
 		
-//		insertEmployees();
+		insertEmployees();
 //		queryEmployees();	
 //		updateEmployee();
-		deleteEmployee();
+//		deleteEmployee();
 	}
 	
 	static void insertEmployees() {
@@ -47,7 +47,7 @@ public class OneToOneDemo {
 			
 			Random random = new Random();
 			
-			for (int index = 1; index <= 25; index ++) {
+			for (int index = 1; index <= 5; index ++) {
 
 				String firstName = "E - FN - " + index;
 				String lastName = "E - LN - " + index;

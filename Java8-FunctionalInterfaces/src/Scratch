@@ -1,0 +1,34 @@
+
+
+Objects / Classes
+
+Twitter
+	tweet
+		monitorTweets()
+		
+// Java
+
+class TweetMonitor {
+	
+	TweetMonitor(String tweet) {
+	
+	}
+	
+	void monitor() {
+	
+		// Conditions..
+		if (tweet.contains(...)){
+		}
+	}
+}
+
+TweetMonitor obj = new TweetMonitor("fdfdjfdhfjd");
+obj.monitor();
+
+---------------------------------------------
+
+
+function monitorTweet(String tweet){
+	
+}
+
