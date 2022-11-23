@@ -1,7 +1,7 @@
 package com.edureka.javasql2.hibernate;
 
-import java.sql.Array;
 import java.util.ArrayList;
+import java.util.List;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -10,12 +10,15 @@ public class OneToManyDemo {
 
 	public static void main(String[] args) {
 		
-		insertRecords();
+//		insertRecords();
+//		selectRecords();		
+//		updateRecords();
+		
+//		deleteAnswerRecords();
+		deleteQuestionRecord();
 	}
 	
 	static void insertRecords() {
-		
-		
 		
 		Transaction transaction = null;
 		Session session = null;
@@ -43,6 +46,163 @@ public class OneToManyDemo {
 			}
 		}		
 	}
+	
+	
+	static void selectRecords() {
+		
+		Transaction transaction = null;
+		Session session = null;
+		try {
+			
+			session = HibernateUtils.createSession();
+			
+			transaction = session.beginTransaction();
+			
+			String query = "from question";
+			
+			List<Question> questions 
+				= session.createQuery(query, Question.class).list();
+			
+			for (Question question : questions) {
+				
+				System.out.println(question);
+				System.out.println(question.getAnswers());
+				
+				System.out.println();
+			}
+			
+			transaction.commit();			
+		}catch (Exception e) {
+			e.printStackTrace();
+			if (transaction != null) {
+				transaction.rollback();				
+			}
+		}finally {
+			if (session != null) {
+				session.close();				
+			}
+		}		
+	}	
+	
+	
+	
+	static void updateRecords() {
+		
+		Transaction transaction = null;
+		Session session = null;
+		try {
+			
+			session = HibernateUtils.createSession();
+			
+			transaction = session.beginTransaction();
+			
+			Long questionId = 2L;
+			
+			Question questionObj = session.get(Question.class, questionId);
+			
+			questionObj.setQuestionText("What are the advantages of Java?");
+
+			List<Answer> answers 
+				= questionObj.getAnswers();
+			for (int index = 0; index < answers.size(); index ++) {
+				
+				Answer answerObj = answers.get(index);
+				
+				if (answerObj.getId().equals(3L)) {
+					
+					answerObj.setAnswerText("Java is an Object Oriented Programming language");
+					
+				}else if (answerObj.getId().equals(4L)) {
+					
+					answerObj.setAnswerText("Java can also be used to develop desktop, web, "
+							+ "enterprise and mobile based applications");
+				}				
+			}
+			
+			session.saveOrUpdate(questionObj);			
+			
+			transaction.commit();			
+		}catch (Exception e) {
+			e.printStackTrace();
+			if (transaction != null) {
+				transaction.rollback();				
+			}
+		}finally {
+			if (session != null) {
+				session.close();				
+			}
+		}		
+	}	
+	
+	
+	
+	static void deleteAnswerRecords() {
+		
+		Transaction transaction = null;
+		Session session = null;
+		try {
+			
+			session = HibernateUtils.createSession();
+			
+			transaction = session.beginTransaction();
+			
+			Long questionId = 3L;
+			
+			Question questionObj = session.get(Question.class, questionId);
+			
+			List<Answer> answers = questionObj.getAnswers();
+			
+			int firstAnswerIndex = 0;
+			answers.remove(firstAnswerIndex);
+			
+			int lastAnswerIndex = answers.size() - 1;
+			answers.remove(lastAnswerIndex);
+			
+			session.saveOrUpdate(questionObj);			
+			
+			transaction.commit();			
+		}catch (Exception e) {
+			e.printStackTrace();
+			if (transaction != null) {
+				transaction.rollback();				
+			}
+		}finally {
+			if (session != null) {
+				session.close();				
+			}
+		}		
+	}		
+	
+	
+	
+	static void deleteQuestionRecord() {
+		
+		Transaction transaction = null;
+		Session session = null;
+		try {
+			
+			session = HibernateUtils.createSession();
+			
+			transaction = session.beginTransaction();
+			
+			Long questionId = 1L;
+			
+			Question questionObj = session.get(Question.class, questionId);
+						
+			session.delete(questionObj);			
+			
+			transaction.commit();			
+		}catch (Exception e) {
+			e.printStackTrace();
+			if (transaction != null) {
+				transaction.rollback();				
+			}
+		}finally {
+			if (session != null) {
+				session.close();				
+			}
+		}		
+	}			
 	
 	static ArrayList<Question> createQAndA() {
 		

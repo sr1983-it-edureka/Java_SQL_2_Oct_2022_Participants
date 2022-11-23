@@ -53,4 +53,9 @@ public class Question {
 		this.answers = answers;
 	}
 	
+	public String toString() {
+		
+		return "Question [" + questionText + "]";
+	}
+	
 }

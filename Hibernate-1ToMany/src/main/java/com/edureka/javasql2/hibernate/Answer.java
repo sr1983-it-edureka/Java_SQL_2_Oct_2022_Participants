@@ -37,4 +37,9 @@ public class Answer {
 	public void setAnswerText(String answerText) {
 		this.answerText = answerText;
 	}
+	
+	public String toString() {
+		
+		return "Answer [" + answerText + "]";
+	}
 }

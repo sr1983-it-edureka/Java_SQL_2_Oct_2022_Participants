@@ -4,6 +4,12 @@ public class ListCollectionDemo {
 
 	public static void main(String[] args) {
 				
+//		createList();
+		
+		removeElement();
+	}
+	
+	static void createList() {
 //		CollectionSamples samples = new CollectionSamples();
 
 		ArrayList<String> listOfColors = CollectionSamples.colorsList();		
@@ -25,5 +31,20 @@ public class ListCollectionDemo {
 			
 			System.out.println("Random number is " + randomNumber);
 		}
+	}
+	
+	static void removeElement() {
+		
+		ArrayList<String> listOfColors = CollectionSamples.colorsList();
+		
+		System.out.println(listOfColors);
+		
+		listOfColors.remove(0);
+		
+		// Last element
+		int lastIndex = listOfColors.size() - 1;
+		listOfColors.remove(lastIndex);
+		
+		System.out.println(listOfColors);
 	}
 }

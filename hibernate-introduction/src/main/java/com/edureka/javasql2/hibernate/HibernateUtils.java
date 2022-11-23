@@ -9,7 +9,7 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
  
 public class HibernateUtils {
 
-	static Session createSession() {
+	public static Session createSession() {
 		
 		StandardServiceRegistry registry = 
 				new StandardServiceRegistryBuilder().configure().build();

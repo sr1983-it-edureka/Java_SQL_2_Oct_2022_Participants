@@ -9,6 +9,10 @@ class CollectionSamples {
 		listOfColors.add("Blue");
 		listOfColors.add("Pink");
 		listOfColors.add("Orange");
+		listOfColors.add("RED");
+		listOfColors.add("WHITE");
+		listOfColors.add("BLACK");
+		
 //		listOfColors.add(10);
 		
 		return listOfColors;
