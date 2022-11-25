@@ -19,7 +19,12 @@ public class TreeSetDemo {
 		
 		TreeSet<String> names = new TreeSet<>();
 		
-		names.add("Sweta");names.add("Manu");names.add("Aekta");
+		names.add("Sweta");names.add("Manu");
+		
+		names.add("Aekta");
+		names.add("Aektha");
+		names.add("Aektca");
+		
 		names.add("sweta");
 		
 		names.add("Chopra");

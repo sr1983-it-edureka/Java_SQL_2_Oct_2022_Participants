@@ -1,0 +1,1 @@
+alter table product rename column pname to product_name;
